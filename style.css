@@ -6,17 +6,18 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7eb3, #765dfc);
-    color: white;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Comic Sans for extra silliness */
+    background: linear-gradient(135deg, #FFC0CB, #FFFF80); /* Neon pink to bright yellow */
+    color: #333333; /* Cool black for contrast */
     text-align: center;
     line-height: 1.6;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background: rgba(0, 0, 0, 0.6);
+    background: #ffff80; /* Bright yellow */
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -25,15 +26,18 @@ header {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    animation: bounceIn 2s ease-in-out; /* Fun bounce animation */
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
+    color: #ff69b4; /* Hot pink for vibrance */
 }
 
 header p {
     font-size: 1.2rem;
+    color: #333333;
 }
 
 /* Main Content */
@@ -45,16 +49,20 @@ main {
 }
 
 section {
-    background: rgba(255, 255, 255, 0.1);
+    background: #fff4e6; /* Peachy background for sections */
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #ff69b4; /* Hot pink */
+    animation: wiggle 1s infinite; /* Wiggle animation for fun */
 }
 
 ul.calculator-list {
@@ -65,24 +73,25 @@ ul.calculator-list {
 ul.calculator-list li {
     margin: 10px 0;
     font-size: 1.2rem;
+    color: #333333;
 }
 
 ul.calculator-list a {
     text-decoration: none;
-    color: #ff7eb3;
+    color: #00ffff; /* Bright cyan for links */
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
 }
 
 ul.calculator-list a:hover {
-    color: #765dfc;
-    transform: scale(1.1);
+    color: #333333; /* Cool black on hover */
+    transform: scale(1.2); /* Fun hover effect */
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #f0f8ff; /* Light cyan */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -90,20 +99,49 @@ footer {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 footer p {
     font-size: 1rem;
+    color: #333333;
 }
 
 footer a {
-    color: #ff7eb3;
+    color: #ff69b4; /* Hot pink links */
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #333333; /* Cool black on hover */
+}
+
+/* Animations */
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Responsive Design */
