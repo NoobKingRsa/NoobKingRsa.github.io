@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoobKingRsa | The Calculator King 👑</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #765dfc);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        main {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        main h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .calculator-list {
+            margin: 2rem 0;
+            text-align: left;
+            display: inline-block;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .calculator-item {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .calculator-item a {
+            text-decoration: none;
+            color: #ff7eb3;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .calculator-item a:hover {
+            color: #765dfc;
+        }
+
+        footer {
+            margin-top: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff7eb3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👑 Welcome to the Kingdom of Noobs!</h1>
+        <p>Hi, I’m <strong>NoobKingRsa</strong>, and this is my fun little corner of the internet! Explore my projects and join me in my quest to build <em>a calculator in every programming language</em>. 🤓</p>
+    </header>
+    <main>
+        <h2>🧮 The Great Calculator Challenge!</h2>
+        <p>So far, I’ve completed a calculator in:</p>
+        <div class="calculator-list">
+            <div class="calculator-item">📟 <strong>C (Version 1)</strong>: <a href="https://github.com/NoobKingRsa/c-calculator-v1" target="_blank">Check it out!</a></div>
+        </div>
+        <p>What’s next? Python, JavaScript, and beyond! Stay tuned for updates. 🚀</p>
+    </main>
+    <footer>
+        <p>👑 Long live the Noob King! | <a href="https://github.com/NoobKingRsa" target="_blank">GitHub Profile</a></p>
+    </footer>
+</body>
+</html>
