@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Comic Sans for extra silliness */
-    background: linear-gradient(135deg, #FFC0CB, #FFFF80); /* Neon pink to bright yellow */
-    color: #333333; /* Cool black for contrast */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #B3E5FC, #AED581); /* Sky blue to soft green */
+    color: #333333; /* Dark gray for text */
     text-align: center;
     line-height: 1.6;
     padding: 20px;
@@ -17,7 +17,7 @@ body {
 
 /* Header */
 header {
-    background: #ffff80; /* Bright yellow */
+    background: #FFC107; /* Bright yellow for header */
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -26,18 +26,18 @@ header {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    animation: bounceIn 2s ease-in-out; /* Fun bounce animation */
+    animation: slideDown 1s ease-in-out; /* Fun slide-in animation */
 }
 
 header h1 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
-    color: #ff69b4; /* Hot pink for vibrance */
+    color: #333333; /* Dark gray for text */
 }
 
 header p {
     font-size: 1.2rem;
-    color: #333333;
+    color: #000000; /* Black for better visibility */
 }
 
 /* Main Content */
@@ -49,7 +49,7 @@ main {
 }
 
 section {
-    background: #fff4e6; /* Peachy background for sections */
+    background: #ffffff; /* Clean white for sections */
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -61,8 +61,8 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ff69b4; /* Hot pink */
-    animation: wiggle 1s infinite; /* Wiggle animation for fun */
+    color: #FFA726; /* Bright orange for headings */
+    animation: floaty 2s infinite; /* Fun floaty animation for headings */
 }
 
 ul.calculator-list {
@@ -78,20 +78,20 @@ ul.calculator-list li {
 
 ul.calculator-list a {
     text-decoration: none;
-    color: #00ffff; /* Bright cyan for links */
+    color: #FFA726; /* Bright orange for links */
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
 }
 
 ul.calculator-list a:hover {
-    color: #333333; /* Cool black on hover */
+    color: #000000; /* Black on hover */
     transform: scale(1.2); /* Fun hover effect */
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
-    background: #f0f8ff; /* Light cyan */
+    background: #B3E5FC; /* Soft sky blue */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -109,37 +109,33 @@ footer p {
 }
 
 footer a {
-    color: #ff69b4; /* Hot pink links */
+    color: #FFA726; /* Bright orange for links */
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: #333333; /* Cool black on hover */
+    color: #000000; /* Black on hover */
 }
 
 /* Animations */
-@keyframes wiggle {
+@keyframes floaty {
     0%, 100% {
-        transform: rotate(-3deg);
+        transform: translateY(0);
     }
     50% {
-        transform: rotate(3deg);
+        transform: translateY(-5px);
     }
 }
 
-@keyframes bounceIn {
+@keyframes slideDown {
     0% {
-        transform: scale(0.8);
+        transform: translateY(-50px);
         opacity: 0;
     }
-    50% {
-        transform: scale(1.2);
-        opacity: 0.8;
-    }
     100% {
-        transform: scale(1);
+        transform: translateY(0);
         opacity: 1;
     }
 }
